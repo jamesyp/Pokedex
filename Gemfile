@@ -15,6 +15,7 @@ group :development, :test do
   gem 'sqlite3',    '1.3.9'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
+  gem 'terminal-notifier-guard'
   gem 'spring'
 end
 
