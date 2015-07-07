@@ -1,8 +1,7 @@
-require 'open-uri'
-require 'json'
+require 'pokeapi'
 
-# Gets pokemon information from pokeapi.co json api
-class Pokemon
+class Pokemon < PokeApi
+
   attr_reader :name
   attr_reader :national_id
   attr_reader :height
@@ -64,10 +63,5 @@ class Pokemon
       array.map! do |str|
         str.sub('-', ' ').split.map(&:capitalize).join(' ')
       end
-    end
-
-    def json_hash(resource)
-      uri = "http://pokeapi.co#{resource}"
-      JSON.parse(open(uri).read)
     end
 end
