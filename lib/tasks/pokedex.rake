@@ -1,4 +1,3 @@
-
 namespace :pokedex do
   desc "Download all Pokemon images from Bulbapedia -- Bulbasaur through Zygarde"
   # Images will be stored in app/assets/images/pokemon/xxx_name.png
